@@ -313,11 +313,6 @@ with tab1:
 with tab2:
     st.header("Explorador de Datos")
     st.dataframe(df_filtrado)
-    csv = df_filtrado.to_csv(index=False).encode('utf-8')
-    st.download_button(
-        label="📥 Descargar Datos Actuales (CSV)",
-        data=csv,
-        file_name='seleccion_mundial.csv',
-        mime='text/csv',
-    )
-    st.sidebar.text("Versión Estudiante 1.9 (Graph 1 Fixed)")
+    st.sidebar.text("Trabajo realizado por: ")
+    st.sidebar.text("- Daniel Avalos")
+    st.sidebar.text("- Ricardo P.")
