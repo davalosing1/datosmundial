@@ -225,12 +225,12 @@ with tab1:
     col5, col6 = st.columns(2)
 
     with col5:
-        # --- GRÁFICO 5: DISCIPLINA DINÁMICA ---
+        # ---  ---
         df_plot_cards = df if pais_seleccionado == "Todos" else df_filtrado
         
         # Radio Button para seleccionar la métrica
         opcion_card = st.radio(
-            "Métrica de Disciplina:", 
+            " TOTAL TARJETAS:", 
             ["cards_yellow", "cards_red"], 
             format_func=lambda x: "Tarjetas Amarillas" if x == "cards_yellow" else "Tarjetas Rojas",
             horizontal=True, 
@@ -276,7 +276,7 @@ with tab1:
                     fontsize=10 
                 )
 
-            ax5.set_title(f"Disciplina: Total de {titulo_card_map[opcion_card]} por Posición")
+            ax5.set_title(f"Total de {titulo_card_map[opcion_card]} por Posición")
             ax5.set_ylabel(f"Total de {titulo_card_map[opcion_card]}")
             ax5.set_xlabel("Posición")
             st.pyplot(fig5)
