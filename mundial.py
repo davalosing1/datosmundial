@@ -315,4 +315,4 @@ with tab2:
     st.dataframe(df_filtrado)
     st.sidebar.text("Trabajo realizado por: ")
     st.sidebar.text("- Daniel Avalos")
-    st.sidebar.text("- Ricardo P.")
+    st.sidebar.text("- Ricardo Perez")
