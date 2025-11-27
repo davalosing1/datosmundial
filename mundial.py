@@ -239,7 +239,7 @@ with tab1:
 
         # Lógica de Título Dinámico para el Gráfico 5
         titulo_card_map = {"cards_yellow": "Tarjetas Amarillas", "cards_red": "Tarjetas Rojas"}
-        st.info(f"Total de {titulo_card_map[opcion_card]} por Posición ({pais_seleccionado})")
+        st.info(f"{pais_seleccionado}")
         
         # 1. Agrupar por posición y sumar la métrica seleccionada
         df_cards_total = df_plot_cards.groupby('position')[opcion_card].sum().reset_index()
