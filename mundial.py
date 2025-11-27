@@ -312,17 +312,7 @@ with tab1:
 # --- PESTAÑA 2: DATOS ---
 with tab2:
     st.header("Explorador de Datos")
-
-    # Componente 7: Checkbox para ver todos los datos vs filtrados
-    ver_todos = st.checkbox("Ver datos de TODOS los países (sin filtrar por país, posición o edad)")
-
-    if ver_todos:
-        # Se muestra el DataFrame completo
-        st.dataframe(df)
-    else:
-        # Se muestra el DataFrame filtrado
-        st.dataframe(df_filtrado)
-
+    st.dataframe(df_filtrado)
     csv = df_filtrado.to_csv(index=False).encode('utf-8')
     st.download_button(
         label="📥 Descargar Datos Actuales (CSV)",
